@@ -1,0 +1,55 @@
+nav {
+    display:flex;
+    justify-content: space-evenly;
+    background-color: #585365;
+    padding-top:20px;
+    padding-bottom:20px;
+
+}
+
+nav a {
+    color:white;
+    font-family: Arial
+}
+
+h1 {
+    font-family: Arial;
+    line-height: 35px;
+}
+
+button {
+    color:white;
+    background-color: #585365;
+    padding:10px;
+    border-radius:10px;
+    font-family: Arial;
+    text-align: center;
+}
+
+.lesjeux {
+    margin: 0 auto;
+}
+
+.jeux1 {
+    display:flex;
+    gap: 100px;
+}
+.jeux1 div {
+    border: solid black;
+    width:130px;
+    height:150px;
+    margin-top:20px;
+}
+
+.jeux2 {
+    display:flex;
+    gap: 100px;
+}
+.jeux2 div {
+    border: solid black;
+    width:130px;
+    height:150px;
+    margin-top:20px;
+
+
+
