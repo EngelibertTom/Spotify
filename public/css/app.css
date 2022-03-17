@@ -4,6 +4,69 @@ nav {
   color: white;
 }
 
+/* PROFILE */
+/* --------------------- PROFIL --------------------- */
+.img-profil {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 150px;
+  height: 150px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.profil-info {
+  height: 250px;
+  background-color: #fff;
+  background: linear-gradient(#f8f8f8, #fff);
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem;
+}
+
+.img-profil {
+  margin-top: 2%;
+  margin-left: 2%;
+}
+.img-profil:hover {
+  opacity: 80%;
+}
+
+.profil-info .profil-infos {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 2%;
+}
+
+.profil-info h3 {
+  text-align: center;
+}
+
+.profil-info p {
+  text-align: center;
+}
+
+.profil-buttons {
+  list-style: none;
+}
+
+button {
+  background-color: #585365;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* SONGLIST */
 .playlist {
   max-width: 100%;
@@ -90,4 +153,32 @@ nav {
   font-weight: 600;
   font-size: 13px;
   margin-left: 3px;
+}
+
+audio {
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+}
+
+footer {
+  position: fixed absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #585365;
+  color: #ebeef3;
+  text-align: center;
+  padding: 2px 0;
+  margin-bottom: 40px;
+  opacity: 100%;
+}
+footer .footer-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer a {
+  text-decoration: none;
 }
