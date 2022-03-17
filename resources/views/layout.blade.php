@@ -32,34 +32,7 @@
 
 </nav>
 </header>
-<section>
 
-
-<h1> Gaming OST, </br> le meilleur des musiques</br> de jeux vidéos</h1>
-<button>Découvrez les musiques</button>
-
-    <div class="lesjeux">
-
-        <div class="jeux1">
-             <div></div>
-             <div></div>
-             <div></div>
-        </div>
-
-        <div class="jeux2">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-
-    </div>
-
-</section>
-
-
-<audio id="lecteur" controls>
-
-</audio>
 <main>
 
 @yield("content")
