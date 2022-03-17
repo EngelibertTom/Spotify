@@ -17,45 +17,112 @@ nav a {
     text-decoration: none;
 }
 
-h1 {
+.premiertitre {
     font-family: Arial;
-    line-height: 35px;
+    line-height: 65px;
+    margin-left:80px;
+    margin-top:100px;
+    margin-bottom:100px;
+    font-size:40px;
 }
 
-button {
+.button {
+    text-align:center;
+}
+
+.button button{
     color:white;
     background-color: #585365;
-    padding:10px;
+    padding:15px;
+    text-transform:uppercase;
     border-radius:10px;
     font-family: Arial;
-    text-align: center;
+    margin-bottom:45px;
+
 }
 
 .lesjeux {
-    margin: 0 auto;
+    display:block;
+    text-align: center;
 }
+
+
 
 .jeux1 {
     display:flex;
-    gap: 100px;
+   ;
+
 }
 .jeux1 div {
-    border: solid black;
-    width:130px;
+
+    width:150px;
     height:150px;
-    margin-top:20px;
+    background-color: #6b7280;
+    margin:0 auto;
+    margin-top:50px;
 }
 
 .jeux2 {
     display:flex;
-    gap: 100px;
+
 }
 .jeux2 div {
     border: solid black;
     width:130px;
     height:150px;
     margin-top:20px;
+    width: 150px;
+    height: 150px;
+    background-color: #6b7280;
+    margin: 0 auto;
+    margin-top: 20px;
 }
+
+body {
+    margin:0;
+}
+.container form {
+
+    text-align: center;
+    border:solid black 1px;
+    margin:0 auto;
+    margin-top:30px;
+    width: 350px;
+    height:462px;
+    border-radius:30px;
+}
+
+.mb-3 {
+    margin-top:50px;
+}
+
+.container form {
+    background-color:#f8fafc;
+    border-color:#f8fafc;
+}
+.container form input {
+    padding:10px;
+    background-color: #EAEAEA;
+    border-radius: 10px;
+    border-color:#EAEAEA;
+}
+
+.container form h2 {
+    font-family:Roboto;
+}
+
+.container form button {
+    padding:10px;
+    padding-left:15px;
+    padding-right:15px;
+    background-color:#585365;
+    color:white;
+    margin-top:15px;
+    margin-bottom:15px;
+    border-radius:15px;
+}
+
+
 
 /* songlist */
 
