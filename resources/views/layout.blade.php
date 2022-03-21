@@ -12,7 +12,8 @@
 
 <header>
 <nav>
-        <a href="/">Accueil</a>
+
+        <a href="/"><img src="/images/logo.png"></a>
         <a href="/nouvelle/chanson">Nouvelle Chanson</a>
     @auth
         Bonjour {{Auth::user()->name}}
@@ -67,5 +68,6 @@
 </footer>
 </body>
 <script src="/js/jquery.js"></script>
+<script src="/js/jquery"
 <script src="/js/divers.js"></script>
 </html>
