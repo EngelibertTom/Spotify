@@ -42,6 +42,5 @@
 <footer>Copyright</footer>
 </body>
 <script src="/js/jquery.js"></script>
-<script src="/js/jquery"
 <script src="/js/divers.js"></script>
 </html>

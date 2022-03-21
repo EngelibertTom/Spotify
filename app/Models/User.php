@@ -46,6 +46,12 @@ class User extends Authenticatable
         //SELECT * FROM songs WHERE user_id=$this->id
         return $this->hasMany("App\Models\Song", "user_id");
     }
+
+
+    public function albums() {
+        //SELECT * FROM songs WHERE user_id=$this->id
+        return $this->hasMany("App\Models\Album", "user_id");
+    }
     public function IfollowThem() {
         return $this->belongsToMany("App\Models\User", "connection","from_id","to_id");
         //SELECT $ from users JOIN connection ON to_id=users.id WHERE from_id=$this->id
