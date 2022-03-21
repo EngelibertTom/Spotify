@@ -39,7 +39,11 @@
 
 @yield("content")
 </main>
-
+<audio class="song" controls
+        src="">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
 <footer>
     <div>
         <h3>About</h3>
@@ -68,6 +72,6 @@
 </footer>
 </body>
 <script src="/js/jquery.js"></script>
-<script src="/js/jquery"
+<script src="/js/jquery">
 <script src="/js/divers.js"></script>
 </html>
