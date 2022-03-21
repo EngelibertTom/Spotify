@@ -29,7 +29,5 @@
     </section>
 
 
-    <audio id="lecteur" controls>
-
     </audio>
 @endsection
