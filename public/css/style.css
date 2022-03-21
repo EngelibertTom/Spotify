@@ -4,12 +4,22 @@ nav {
     background-color: #585365;
     padding-top:20px;
     padding-bottom:20px;
+    align-items: center;
 
 }
 
 nav a {
     color:white;
-    font-family: Arial
+    font-family: Arial;
+    text-decoration: none;
+    text-transform: uppercase;
+
+
+}
+
+nav img {
+    height:50px;
+    width:auto;
 }
 
 .premiertitre {
@@ -111,6 +121,10 @@ body {
     margin-top:15px;
     margin-bottom:15px;
     border-radius:15px;
+}
+
+.card-body form {
+    height:500px;
 }
 
 
