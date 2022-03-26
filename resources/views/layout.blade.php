@@ -39,7 +39,7 @@
 
 @yield("content")
 </main>
-<audio class="song" controls
+<audio id="lecteur" class="song" controls
         src="">
             Your browser does not support the
             <code>audio</code> element.
