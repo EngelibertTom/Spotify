@@ -18,7 +18,7 @@
         </br>
         <input type="file" required  name="song"/>
         </br>
-        <input type="number" required min="0" max="10" placeholder="note" name="note" value="{{old('title')}}"/>
+        <input type="number" required min="0" max="20" placeholder="note" name="note" value="{{old('title')}}"/>
 
         <select name="album">
             @foreach(Auth::user()->albums as $a)
