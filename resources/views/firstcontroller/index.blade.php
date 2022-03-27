@@ -10,22 +10,17 @@
         <button>Découvrez les musiques</button>
         </div>
 
-        <div class="lesjeux">
+        <div class="lesalbums1" style="display:block;">
+            <div class="lesalbums" style="display:flex;justify-content: space-evenly; ">
 
-            <div class="jeux1">
-                <div></div>
-                <div></div>
-                <div></div>
+                @include("_albums", ["albums" => $albums])
             </div>
-
-            <div class="jeux2">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
         </div>
+
+
         @include("_songs",["songs" => $songs])
+
+
     </section>
 
 

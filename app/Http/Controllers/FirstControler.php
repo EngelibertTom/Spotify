@@ -16,10 +16,12 @@ class FirstControler extends Controller
         $songs = Song::all();
         //  $s = Song::find(1);
         //    echo $s->title;die(1);
+        $albums = Album::all();
 
 
-        return view("firstcontroller.index", ["songs" => $songs]);
+        return view("firstcontroller.index", ["songs" => $songs,"albums" =>$albums]);
     }
+
 
     public function about()
     {
