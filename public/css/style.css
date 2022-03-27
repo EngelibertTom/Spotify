@@ -127,6 +127,11 @@ body {
     height:500px;
 }
 
+audio {
+    width:100%;
+    border-radius: 0px;
+}
+
 
 
 
