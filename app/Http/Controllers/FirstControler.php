@@ -19,7 +19,16 @@ class FirstControler extends Controller
         $albums = Album::all();
 
 
+
         return view("firstcontroller.index", ["songs" => $songs,"albums" =>$albums]);
+    }
+
+    public function listalbums()
+    {
+        $albums = Album::all();
+
+
+        return view("firstcontroller.listalbums" ,["albums" =>$albums]);
     }
 
 
@@ -89,6 +98,12 @@ class FirstControler extends Controller
     {           
         $user = User::findorFail($id);
         return view("firstcontroller.users", ["user" => $user]);
+    }
+
+    public function albums()
+    {
+
+        return view("firstcontroller.songsalbum", ["id" => $id]);
     }
 
     public function suivre($id)

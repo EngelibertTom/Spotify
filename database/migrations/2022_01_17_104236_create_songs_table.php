@@ -20,7 +20,6 @@ class CreateSongsTable extends Migration
             $table->integer("album_id")->nullable();
             $table->integer("note")->nullable();
             $table->integer('user_id');
-            $table->integer('album_id')->nullable();
             $table->timestamps();
         });
     }
