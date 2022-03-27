@@ -79,5 +79,6 @@
             @yield('content')
         </main>
     </div>
+    <audio id="lecteur" controls>
 </body>
 </html>

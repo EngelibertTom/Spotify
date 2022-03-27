@@ -13,7 +13,7 @@
         </div>
     <form method="post" action="/chanson/store" enctype="multipart/form-data">
         @csrf
-        Ajouter une chanson
+        <h2>Add a song</h2>
         <input type="text" required placeholder="Title" name="title" value="{{old('title')}}"/>
         </br>
         <input type="file" required  name="song"/>
@@ -32,7 +32,7 @@
 
         <form method="post" action="/album/store" enctype="multipart/form-data">
             @csrf
-            Ajouter un album
+        <h2>Add an album</h2>
             <input type="text" required placeholder="Title" name="title" value="{{old('title')}}"/>
             </br>
             <input type="file" required  name="cover"/>

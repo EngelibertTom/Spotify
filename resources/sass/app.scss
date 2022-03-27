@@ -5,5 +5,220 @@
 @import 'variables';
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
 
+nav {
+    display: flex;
+    color: white;
+    // color :blue;
+}
+
+
+
+/* PROFILE */
+
+
+/* --------------------- PROFIL --------------------- */
+
+.img-profil {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 150px;
+  height:150px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.profil-info {
+  height: 250px;
+  background-color: #fff;
+  background: linear-gradient(#f8f8f8, #fff);
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem;
+}
+
+.img-profil {
+  margin-top: 2%;
+  margin-left: 2%;
+
+  &:hover {
+    opacity: 80%;
+  }
+}
+
+.profil-info .profil-infos {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 2%;
+
+}
+
+.profil-info h3 {
+  text-align: center;
+}
+
+.profil-info p {
+  text-align: center;
+}
+
+.profil-buttons {
+    list-style: none;
+
+}
+
+
+button {
+    background-color: #585365;
+    text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+
+
+/* SONGLIST */
+
+.playlist {
+    max-width: 100%;
+    //max-width: 490px;
+    // width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, .4);
+
+
+    .playlist-header {
+        --start: 15%;
+        
+        height: 130px;
+        background-image: linear-gradient(to right, #585365, #585365);
+        color: #fff;
+        position: relative;
+        border-radius: 12px 12px 0 0;
+        overflow: hidden;
+        
+        .leaderboard__title {
+          position: absolute;
+          z-index: 2;
+          top: 50%;
+          right: calc(var(--start) * .75);
+          transform: translateY(-50%);
+          text-transform: uppercase;
+          margin: 0;
+          
+          span {
+            display: block;
+          }
+          
+          &--top {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 6.5px;
+          }
+          
+          &--bottom {
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 3.55px;
+            opacity: .65;
+            transform: translateY(-2px);
+          }
+        }
+      }
+      
+      &__profiles {
+        background-color: #fff;
+        border-radius: 0 0 12px 12px;
+        padding: 15px 15px 20px;
+        display: grid;
+        row-gap: 8px;
+      }
+      
+      &__profile {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        align-items: center;
+        padding: 10px 30px 10px 10px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23);
+        cursor: pointer;
+        transition: transform .25s cubic-bezier(.7,.98,.86,.98), box-shadow .25s cubic-bezier(.7,.98,.86,.98);
+        background-color: #fff;
+        
+        &:hover {
+          transform: scale(1.2);
+          box-shadow: 0 9px 47px 11px rgba(51, 51, 51, 0.18);
+        }
+      }
+      
+      &__picture {
+        max-width: 100%;
+        width: 60px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 10px #ebeef3, 0 0 0 22px #f3f4f6;
+      }
+      
+      &__name {
+        color: #979cb0;
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: 0.64px;
+        margin-left: 12px;
+      }
+      
+      &__value {
+        color: #35d8ac;
+        font-weight: 700;
+        font-size: 34px;
+        text-align: right;
+        
+        & > span {
+          opacity: .8;
+          font-weight: 600;
+          font-size: 13px;
+          margin-left: 3px;
+        }
+      }
+  }
+
+  // AUDIO BAR
+  audio {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+  // FOOTER 
+
+  footer {
+    position: fixed absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:#585365;
+    // color: #c7c7c7;
+    color: #ebeef3;
+    text-align: center;
+    padding: 2px 0 ;
+    margin-bottom: 40px;
+    opacity: 100%;
+
+    & .footer-wrap {
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    & a {
+      text-decoration: none;
+    }
+  }
